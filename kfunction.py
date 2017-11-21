@@ -100,9 +100,9 @@ if __name__ == "__main__":
     area = Extent(xmin=xmin, xmax=xmax,
                   ymin=ymin, ymax=ymax)
     ds, percentiles, lds = test(points, area)
-    print "Random"
+    print("Random")
     for i, v in enumerate(percentiles):
-        print ds[i], v[0], lds[i], v[1]
+        print(ds[i], v[0], lds[i], v[1])
 
     # three blocks of points
     points1 = [ Point(random.uniform(10, 20),
@@ -121,6 +121,6 @@ if __name__ == "__main__":
     ymax = max([p.y for p in points])
     area = Extent(xmin=xmin,xmax=xmax,ymin=ymin,ymax=ymax)
     ds, percentiles, lds = test(points, area)
-    print "Three blocks"
+    print("Three blocks")
     for i, v in enumerate(percentiles):
-        print ds[i], v[0], lds[i], v[1]
+        print(ds[i], v[0], lds[i], v[1])
